@@ -17,7 +17,7 @@ RUN mkdir -p /opt && \
     mkdir -p /opt/data/logs && \
     mkdir -p /opt/usr/local/nginx/conf && \
     cp -a /usr/local/nginx/sbin/nginx /opt/nginx && \
-    cp -a /usr/local/nginx/conf/mime.types /opt/usr/local/nginx/conf/mime.types && \
+    cp -a /usr/local/nginx/conf/mime.types /opt/mime.types && \
     cp -a --parents /usr/local/nginx /opt && \
     cp -a --parents /etc/passwd /opt && \
     cp -a --parents /etc/group /opt
@@ -29,3 +29,5 @@ LABEL Maintainer="Brian Robertson <brian@fulso.me>" \
 COPY --from=build /opt /
 
 CMD [ "/nginx", "-c", "/nginx.conf" ]
+
+# vim: set filetype=dockerfile :
