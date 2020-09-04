@@ -29,7 +29,7 @@ http {
   types_hash_max_size 2048;
   server_names_hash_bucket_size 64;
   
-  include /usr/local/nginx/conf/mime.types;
+  include /mime.types;
   default_type text/html;
   
   access_log /data/logs/access.log;
