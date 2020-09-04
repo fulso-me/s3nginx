@@ -1,3 +1,8 @@
+<div align="center">
+<a href="https://github.com/fulso-me/s3nginx"><img src="https://git.fulso.me/lorx/s3nginx/badges/master/pipeline.svg?key_text=Build" alt="Master"></a>
+<a href="https://hub.docker.com/repository/docker/fulsome/s3nginx"><img src="https://img.shields.io/badge/-DockerHub-blue" alt="DockerHub"></a>
+</div>
+
 # What is this?
 
 This is a distroless container for nginx with the s3 module.
